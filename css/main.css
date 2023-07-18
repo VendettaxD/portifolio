@@ -161,6 +161,16 @@ body {
   }
 
   .fa-github {
-    color: white;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .fa-linkedin {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .fa-square-twitter {
+    color: #fff;
     font-size: 30px;
   }

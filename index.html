@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- LINK CSS -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/Portifolio/css/loading.css">
     <!-- LINK PARTICLE CSS -->
     <link rel="stylesheet" href="css/particles.css" />
     <!-- LINK FAVICON -->
@@ -19,6 +20,7 @@
     <title>Hassan Dutra | Portifolio</title>
   </head>
   <body>
+    <span class="loader"></span>
     <!-- particles.js container -->
     <div id="particles-js">
       <nav class="nav-bar">
@@ -61,7 +63,13 @@
     </div>
     <div class="container">
       <p>
-        <a href="github.com/vendettaxd"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/habbibsesfiha"><i class="fa-brands fa-square-twitter"></i></a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/hassandutra/"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+      <p>
+        <a href="https://github.com/VendettaxD"><i class="fa-brands fa-github"></i></a>
       </p>
     </div>
     <!-- stats - count particles -->
@@ -162,4 +170,15 @@
       requestAnimationFrame(update);
     </script>
   </body>
+  <script>
+   window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader")
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitioned", () => {
+      document.body.removeChild("loader");
+    })
+   })
+  </script>
 </html>
